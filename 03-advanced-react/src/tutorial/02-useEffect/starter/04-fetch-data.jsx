@@ -17,7 +17,7 @@ const FetchData = () => {
       </div>
       {users.map((user) => {
         return (
-          <div className="users">
+          <div key={user.id} className="users">
             <img src={user.avatar_url} alt={user.login}></img>
             <div>
               <h5>{user.login}</h5>
